@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<head>
+    <title>Smart Campus API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f4f8;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; }
+        p { color: #7f8c8d; }
+        a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Campus API</h1>
+        <p>RESTful API for managing campus rooms and IoT sensors</p>
+        <p>Built with JAX-RS (Jersey) on Apache Tomcat 11</p>
+        <br>
+        <a href="/SmartCampusWAR/api/v1/discovery">API Discovery</a>
+        <a href="/SmartCampusWAR/api/v1/rooms">Rooms</a>
+        <a href="/SmartCampusWAR/api/v1/sensors">Sensors</a>
+    </div>
+</body>
 </html>
